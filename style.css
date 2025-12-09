@@ -67,9 +67,12 @@ main{
     min-height:100%;
 }
 @media screen and(max-width: 1400px){
-main{
-    /*2 columns */ 
-    grid-template-columns: 1fr 1fr;
-}
+    main{
+        /*2 columns */ 
+        grid-template-columns: 1fr 1fr;
+    }
+    .panel.photos{
+        grid-column: span 2; 
+    }
 
 }
