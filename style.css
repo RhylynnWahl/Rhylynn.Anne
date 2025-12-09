@@ -100,4 +100,10 @@ main{
         /*1 columns */ 
         grid-template-rows: 700px 600px 600px;
     }
+    .panel.about, .panel.photos{
+        grid-template-columns: 1fr; 
+        grid-column: span 1;
+        grid-template-rows: 1fr, 1fr;
+        border-bottom: 1px soild#dcdcd0; 
+    }
 }
