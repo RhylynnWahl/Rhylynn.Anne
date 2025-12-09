@@ -66,3 +66,10 @@ main{
     min-width:100%;
     min-height:100%;
 }
+@media screen and(max-width: 1400px){
+main{
+    /*2 columns */ 
+    grid-template-columns: 1fr 1fr;
+}
+
+}
