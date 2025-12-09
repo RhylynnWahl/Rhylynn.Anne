@@ -16,6 +16,11 @@ main{
     display:grid;
     grid-template-columns: 1fr; 
 }
+.panel.text{
+    background: #eeeee7;
+    color: #323232;
+    padding: 30px 60px;
+}
 
 /*welcome panel*/
 .panel.welcome{
@@ -29,12 +34,12 @@ main{
     text-decoration: none;
     margin-right: 20px;
 }
-panel.welcome p{
+.panel.welcome p{
     color: #eeeee7; 
     max-width: 540px;
     line-height: 2em; 
 }
-panel.welcome h1{
+.panel.welcome h1{
     color: #eeeee7;
     font-size: 3em; 
 }
@@ -43,4 +48,21 @@ panel.welcome h1{
 }
 
 /*about panel*/
+.panel.about{
+    grid-template-rows: 3fr 1fr;
+    overflow:hidden;
+}
+.panel.about img{
+    min-width:100%;
+    min-height:100%;
+}
+
 /*photo panel*/ 
+.panel.photos{
+    grid-template-rows: 1fr 3fr;
+    overflow:hidden;
+}
+.panel.photos img{
+    min-width:100%;
+    min-height:100%;
+}
