@@ -73,6 +73,8 @@ main{
     }
     .panel.photos{
         grid-column: span 2; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
 }
