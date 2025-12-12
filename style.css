@@ -11,7 +11,6 @@ main{
     grid-template-columns: 1.2fr 1fr 1fr;
     /*take up 100% of the webbrowser*/
     min-height:100%;
-    max-height: 400px;
 }
 .panel{
     display:grid;
@@ -56,7 +55,6 @@ main{
 .panel.about img{
     min-width:100%;
     min-height:100%;
-    max-height: 400px;
 }
 
 /*photo panel*/ 
@@ -67,7 +65,6 @@ main{
 .panel.photos img{
     min-width:100%;
     min-height:100%;
-    max-height: 400px;
 }
 @media screen and (max-width: 1400px){
     main{
@@ -107,6 +104,7 @@ main{
         grid-template-columns: 1fr; 
         grid-column: span 1;
         grid-template-rows: 1fr, 1fr;
-        border-bottom: 1px soild#dcdcd0; 
+        border-bottom: 1px solid#dcdcd0; 
+        
     }
 }
