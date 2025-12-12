@@ -7,12 +7,12 @@ body{
 
 main{
     display:grid;
+    grid-template-columns: 1fr 1.2fr 1fr 1fr;
     /*take up 100% of the webbrowser*/
     min-height:100%;
 }
 .panel{
-    display:grid;
-    grid-template-columns: 1fr; 
+    display:grid; 
 }
 .panel.text{
     background: #eeeee7;
@@ -22,8 +22,8 @@ main{
 
 /*Header*/
 .panel.header{
-    background: #eeeee7; 
     grid-column: 1 / -1; /* full width */
+     background: #eeeee7; 
     padding: 30px 60px; 
     max-height: 150px; 
 }
@@ -31,17 +31,12 @@ main{
     color: #323230;
     font-size: 3em; 
 }
-.panel.header header{
-    align-self: end;
-}
 
 /*welcome panel*/
 .panel.welcome{
-    background: #323230;
     grid-column: 1 / 3;
+    background: #323230;
     padding:30px 60px;
-    /*4 rows all 1fr of the total height that is avaible*/ 
-    grid-auto-rows: 1fr; 
 }
 .panel.welcome nav a{
     color: #a8a8a8; 
@@ -63,7 +58,6 @@ main{
 
 /*about panel*/
 .panel.about{
-    grid-template-rows: 3fr 1fr;
     grid-column: 3 / 4;
     overflow:hidden;
 }
@@ -75,13 +69,13 @@ main{
 
 /*photo panel*/ 
 .panel.photos{
-    grid-template-rows: 1fr 3fr;
     grid-column: 4 / 5;
     overflow:hidden;
 }
 .panel.photos img{
-    min-width:100%;
-    min-height:100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 @media screen and (max-width: 1400px){
     main{
