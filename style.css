@@ -93,7 +93,7 @@ main {
     main {
         grid-template-columns: 1fr 1fr;
     }
-    .panel.cs {
+    .panel.cs, .panel.header, .panel.footer {
         grid-column: 1 / -1; 
     }
 }
