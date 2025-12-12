@@ -50,12 +50,12 @@ main {
 }
 .panel.welcome p {
     max-width: 420px;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 /* About */
 .panel.about {
-    grid-column: 1.75;
+    grid-column: 2;
     overflow: hidden;
 }
 .panel.about img {
