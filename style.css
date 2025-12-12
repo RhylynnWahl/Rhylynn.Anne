@@ -31,6 +31,9 @@ main{
     color: #323230;
     font-size: 3em; 
 }
+.panel.welcome header{
+    align-self: end;
+}
 
 /*welcome panel*/
 .panel.welcome{
