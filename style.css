@@ -23,8 +23,16 @@ main {
     padding: 30px 60px;
 }
 .panel.header h1 {
-    color: #323230;
+    color: #b87e89;
     font-size: 3em;
+}
+.panel.header nav a {
+    color: #b87e89;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.panel.header nav a:hover {
+    color: #bbbb99;
 }
 
 /* Welcome */
@@ -33,11 +41,7 @@ main {
     background: #323230;
     padding: 30px 60px;
 }
-.panel.welcome nav a {
-    color: #a8a8a8;
-    text-decoration: none;
-    margin-right: 20px;
-}
+
 .panel.welcome h1,
 .panel.welcome p {
     color: #eeeee7;
