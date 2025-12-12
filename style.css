@@ -22,11 +22,23 @@ main{
     padding: 30px 60px;
 }
 
+/*Header*/
+.panel.header{
+    grid-column: 1 / -1; /* full width */
+    background: #eeeee7; 
+    padding: 30px 60px; 
+    max-height: 150px; 
+}
+.panel.header h1{
+    color: #323230;
+    font-size: 3em; 
+}
+
 /*welcome panel*/
 .panel.welcome{
     background: #323230;
     padding:30px 60px;
-    /*3 rows all 1fr of the total height taht is avaible*/ 
+    /*4 rows all 1fr of the total height that is avaible*/ 
     grid-auto-rows: 1fr; 
 }
 .panel.welcome nav a{
