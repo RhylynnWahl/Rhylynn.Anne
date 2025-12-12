@@ -7,6 +7,7 @@ body {
 
 main {
     display: grid;
+    background: #eeeee7;
     grid-template-columns: 1fr 1.2fr 1fr 1fr;
     min-height: 100vh;
 }
@@ -20,9 +21,8 @@ main {
 .panel.header {
     grid-column: 1 / 6;
     grid-template-columns: 1fr 4.5fr 1fr;
-    background: #eeeee7;
     padding: 30px 60px;
-    justify-items: center
+    text-align: center
 }
 .panel.header h1 {
     color: #b87e89;
@@ -41,13 +41,12 @@ main {
 .panel.welcome {
     grid-column: 1 / 2.5;
     grid-column: 2, 3, 2;
-    background: #323230;
     padding: 30px 60px;
 }
 
 .panel.welcome h1,
 .panel.welcome p {
-    color: #eeeee7;
+    color: #323230;;
 }
 .panel.welcome p {
     max-width: 420px;
