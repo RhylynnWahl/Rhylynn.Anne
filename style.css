@@ -36,8 +36,8 @@ main{
 }
 .panel.welcome p{
     color: #eeeee7; 
-    max-width: 540px;
-    line-height: 2em; 
+    max-width: 420pxpx;
+    line-height: 1.6em; 
 }
 .panel.welcome h1{
     color: #eeeee7;
