@@ -1,121 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
 
-body{
+body {
     margin: 0;
     font-family: "Poppins";
 }
 
-main{
-    display:grid;
+main {
+    display: grid;
     grid-template-columns: 1fr 1.2fr 1fr 1fr;
-    /*take up 100% of the webbrowser*/
-    min-height:100%;
+    min-height: 100vh;
 }
-.panel{
-    display:grid; 
+
+/* General panel */
+.panel {
+    display: grid;
 }
-.panel.text{
+
+/* Header */
+.panel.header {
+    grid-column: 1 / -1;
     background: #eeeee7;
-    color: #323232;
     padding: 30px 60px;
 }
-
-/*Header*/
-.panel.header{
-    grid-column: 1 / -1; /* full width */
-     background: #eeeee7; 
-    padding: 30px 60px; 
-    max-height: 150px; 
-}
-.panel.header h1{
+.panel.header h1 {
     color: #323230;
-    font-size: 3em; 
+    font-size: 3em;
 }
 
-/*welcome panel*/
-.panel.welcome{
+/* Welcome */
+.panel.welcome {
     grid-column: 1 / 3;
     background: #323230;
-    padding:30px 60px;
+    padding: 30px 60px;
 }
-.panel.welcome nav a{
-    color: #a8a8a8; 
+.panel.welcome nav a {
+    color: #a8a8a8;
     text-decoration: none;
     margin-right: 20px;
 }
-.panel.welcome p{
-    color: #eeeee7; 
-    max-width: 420px;
-    line-height: 2em; 
-}
-.panel.welcome h1{
+.panel.welcome h1,
+.panel.welcome p {
     color: #eeeee7;
-    font-size: 3em; 
 }
-.panel.welcome footer{
-    align-self: end;
+.panel.welcome p {
+    max-width: 420px;
+    line-height: 1.6;
 }
 
-/*about panel*/
-.panel.about{
+/* About */
+.panel.about {
     grid-column: 3 / 4;
-    overflow:hidden;
+    overflow: hidden;
 }
-.panel.about img{
+.panel.about img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-/*photo panel*/ 
-.panel.photos{
+/* Photos */
+.panel.photos {
     grid-column: 4 / 5;
-    overflow:hidden;
+    overflow: hidden;
 }
-.panel.photos img{
+.panel.photos img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-@media screen and (max-width: 1400px){
-    main{
-        /*2 columns */ 
+
+/* 1400px */
+@media screen and (max-width: 1400px) {
+    main {
         grid-template-columns: 1fr 1fr;
     }
-    .panel.photos{
-        grid-column: span 2; 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+    .panel.photos {
+        grid-column: 1 / -1; 
     }
 }
-@media screen and (max-width: 960px){
-    main{
-        /*1 columns */ 
-        grid-template-columns: 100%;
+
+/* 960px */
+@media screen and (max-width: 960px) {
+    main {
+        grid-template-columns: 1fr;
     }
-    .panel.photos{
-        grid-column: span 2; 
-        grid-template-rows: 500px 400px 400px;
-    }
-    .panel.about{
-        grid-row: 2;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .panel img{
-        width: 100%;
+    .panel.about, 
+    .panel.photos {
+        grid-column: 1 / -1;
     }
 }
-@media screen and (max-width: 680px){
-    main{
-        /*1 columns */ 
-        grid-template-rows: 700px 600px 600px;
-    }
-    .panel.about, .panel.photos{
-        grid-template-columns: 1fr; 
-        grid-column: span 1;
-        grid-template-rows: 1fr 1fr;
-        border-bottom: 1px solid#dcdcd0; 
-        
+
+/* 680px */
+@media screen and (max-width: 680px) {
+    .panel.about,
+    .panel.photos {
+        border-bottom: 1px solid #dcdcd0;
     }
 }
